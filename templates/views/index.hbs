@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {{!-- slider swiper --}}
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+{{!-- font awsome --}}
+<script src="https://kit.fontawesome.com/1d381cab2c.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{!-- bootsrap --}}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+{{!-- footer --}}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<style>
+    *{
+        margin:0px;
+    }
+    body{
+        background-color: rgb(215, 216, 216);
+    }
+    header{
+        padding-top: 1%;
+        padding-bottom: 3%;
+        box-sizing: border-box;
+        width:100%;
+        background-image: linear-gradient(to left,rgb(64, 64, 243),rgb(3, 126, 167),blue,rgb(76, 76, 240));
+        clip-path: polygon(0% 0%,100% 0%,100% 61%,0% 100%);
+        position: fixed;
+        z-index: 2;
+    }
+    header ul li{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 5%;
+        padding: 7px;
+        box-sizing: border-box;
+        transition-duration: .4s;
+    }
+    header ul li:nth-child(1)
+    {
+        background-color: white;
+        color:blue;
+    }
+    header .fas{
+        color: white;
+        font-size: 35px;
+        margin-left: 5%;
+        display: inline-block;
+    }
+    header ul{
+        color: white;
+        height:100%;
+        width:90%;
+        margin:auto;
+        list-style: none;
+        display: inline-block;
+    }
+    header ul li:hover{
+        color:blue;
+        background:white;
+        cursor: pointer;
+    }
+    {{!-- //////// --}}
+
+    .main{
+        height:570px;
+        width: 100%;
+        background-color: brown;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsAq9SJKVg2MplEhk-EVAYypVbwG16eeeQA&usqp=CAU');
+        background-size: 100% 100%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: flex-end;
+        padding-bottom: 5%;
+        box-sizing: border-box;
+    }
+    .kilimanjaro_area {
+        color:black;
+    }
+    .main div{
+        height:70%;
+        width:40%;
+    }
+    .m1{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .m1 h1{
+        font-size: 45px;
+        color: white;
+    }
+    .m1 p{
+        color: white;
+    }
+    .m2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m2 div{
+        height:90%;
+        width:70%;
+        border-radius: 50%;
+        background-color: black;
+        background-image: url('../../public/img/trainer.png');
+        background-size: 140% 97%;
+        background-repeat: no-repeat;
+        background-position: center; 
+
+    }
+    {{!-- ////////// --}}
+    .g{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        grid-gap: 5%;
+        padding: 5%;
+        margin-bottom: 50px;
+        
+    }
+    {{!-- /////////// --}}
+    *******************/
+.kilimanjaro_area {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+	}
+	.foo_top_header_one {
+    background-color: #4e4e58;
+    color: rgb(19, 14, 14);
+}
+.section_padding_100_70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.foo_top_header_one {
+    color: #fff;
+}.kilimanjaro_part {
+    margin-bottom: 30px;
+}
+.foo_top_header_one .kilimanjaro_part > h5 {
+    color: #fff;
+}
+.kilimanjaro_part h4, .kilimanjaro_part h5 {
+    margin-bottom: 30px;
+        color:black;
+
+}
+.kilimanjaro_single_contact_info > p, .kilimanjaro_single_contact_info > h5, .kilimanjaro_blog_area > a, .foo_top_header_one .kilimanjaro_part > p {
+        color:black;
+
+}
+p, ul li, ol li {
+    font-weight: 300;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.kilimanjaro_bottom_header_one {
+    background-color: rgb(25, 9, 53);
+}
+.section_padding_50 {
+    padding: 50px 0;
+}
+.kilimanjaro_bottom_header_one p {
+    color: #fff;
+    margin: 0;
+}
+p, ul li, ol li {
+    font-weight: 300;
+}
+.kilimanjaro_bottom_header_one a {
+    color: inherit;
+    font-size: 14px;
+}
+a, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+.m-top-15 {
+    margin-top: 15px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.kilimanjaro_widget > li {
+    display: inline-block;
+}
+p, ul li, ol li {
+    font-weight: 300;
+}
+ol li, ul li {
+    list-style: outside none none;
+}
+.kilimanjaro_widget a {
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: black;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    padding: 7px 12px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.kilimanjaro_links a {
+    border-bottom: 1px solid #333;
+    color: black ;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+.kilimanjaro_links a {
+    color: rgba(19, 7, 7, 0.5);
+    font-size: 13px;
+}
+top-15 {
+    margin-top: 15px;
+}
+.foo_top_header_one .kilimanjaro_part > h5 {
+    color: #fff;
+}
+.kilimanjaro_part h4, .kilimanjaro_part h5 {
+    margin-bottom: 30px;
+}
+.kilimanjaro_social_links > li {
+    display: inline-block;
+}
+p, ul li, ol li {
+    font-weight: 300;
+}
+.kilimanjaro_social_links a {
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: rgb(24, 23, 23);
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 3px;
+    padding: 7px 12px;
+}
+.kilimanjaro_blog_area .kilimanjaro_date {
+    color: #27ae60;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.kilimanjaro_blog_area > p {
+    color: rgba(37, 31, 31, 0.5);
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+.kilimanjaro_works > a {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 33.33333333%;
+    z-index: 1;
+}
+.kilimanjaro_thumb {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 75px;
+}
+.kilimanjaro_links a i {
+    padding-right: 10px;
+}
+  /* :: 18.0 Footer Area CSS */
+
+    .footer_area {
+        position: relative;
+        z-index: 1;
+    }
+ .footer_bottom p > i,
+    .footer_bottom p > a:hover {
+        color: #27ae60;
+    }	
+
+    .social_links_area {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 50px 0 30px 0;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+ .social_links_area > a:hover {
+        color: #27ae60;
+    }
+
+    .inline-style .social_links_area > a:hover {
+        background-color: transparent;
+        color: #27ae60;
+        border: 0px solid transparent;
+    }
+ .single_feature:hover .feature_text h4 {
+        color: #27ae60;
+    }
+.kilimanjaro_blog_area {
+    border-bottom: 1px solid #333;
+    margin-bottom: 15px;
+    padding: 0 0 15px 90px;
+    position: relative;
+    z-index: 1;
+}
+.kilimanjaro_links a {
+    border-bottom: 1px solid #333;
+    color: rgba(14, 12, 12, 0.5);
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+{{!-- ////////// --}}
+.hstack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  width:40%;
+  margin: auto;
+}
+.hstack_h2{
+    text-align: center;
+}
+
+.vstack {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+{{!-- //////slider   --}}
+
+*,*:before , *:after{  
+    box-sizing: inherit;
+}
+.panels{
+    min-height: 100vh;
+    overflow: hidden ;
+    display: flex;    
+}
+.panel{
+    background-color: #6B0F9C;
+    box-shadow:inset 0 0 0px 5px rgba(255,255,255,0.1);
+    color:white;
+    text-align: center;
+    align-items: center;
+    flex:1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: font-size 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11), flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11), background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+
+}
+.panel1{
+    background-image: url("data:image/jpeg;base64,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");
+
+}
+.panel2{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSS5mK8y1LiRvQrtffiJenDn1DrTrAkwB9A&usqp=CAU");
+}
+.panel3{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPAvb_Cz5lWNpst3dVYnX2JAOyESysHAsag&usqp=CAU");
+}
+.panel4{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0vXvqP-iuYjdy6fxY1hSDdI9fjQJgnn-Zw&usqp=CAU");
+}
+.panel5{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv56qqzd8MNPUW3CpWzR5XrkfdtRBLq2KH2Q&usqp=CAU");
+}
+.panel > *{
+    margin: 0;
+    width:100%;
+    transition: transform 0.5s;
+    flex:1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel > *:first-child{
+    transform: translateY(-100%);
+}
+.panel.open-active> *:first-child{
+    transform: translateY(0);
+}
+.panel > *:last-child{
+    transform: translateY(100%);
+}
+.panel.open-active> *:last-child{
+    transform: translateY(0);
+}
+.panel p{
+    text-decoration: uppercase;
+    font-family: 'Amatic SC',cursive;
+    text-shadow: 0 0 4px rgba(0,0,0,0.72),0 0 14px rgba(0,0,0,0.45);
+    font-size: 2em;
+}
+.panel p:nth-child(2)
+{
+    font-size: 4em;
+}
+.panel.open{
+    flex:5;
+    font-size: 40px;
+}
+@media only screen and (max-width:600px)
+{
+    .panel p{
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 800px) 
+    {
+         .g{
+            display: grid;
+            grid-template-columns: auto auto ;
+            grid-gap: 5%;
+            padding: 5%;
+            margin-bottom: 50px;
+            height:auto;
+            width:100%;
+        
+        }
+        .kilimanjaro_area{
+            margin-top: 200px;
+        }
+    
+    }
+
+
+    @media only screen and (max-width: 600px) 
+    {
+        header ul li{
+        margin-left: 0%;
+        }
+        .main{
+            display: flex;
+            justify-content:center;
+            align-items: space-evenly;     
+            flex-direction: column;      
+            margin-bottom: 100px;
+        }
+
+        .main div{
+            width:95%;
+
+        }
+        .g{
+            display: grid;
+            grid-template-columns: auto ;
+            grid-gap: 5%;
+            padding: 5%;
+            margin-bottom: 50px;
+            height:auto;
+            width:100%;
+        
+        }
+        .kilimanjaro_area{
+            margin-top: 500px;
+        }
+    }
+    {{!-- ////// --}}
+    .table{
+        margin-top: 60px;
+    }
+    {{!-- ////// --}}
+    
+
+
+
+</style>
+    <title>Fitness Care Gym</title>
+</head>
+<body>
+    
+    {{> header}}
+
+    <div class="main">
+        <div class="m1">
+            <h1>We Welcome Our Visitors </h1>
+            <p>Loreum ipsum sdjsh sd yagy eehwau eiwyui udru sds diashd sygd ays dasgyd sdjsh sd yagy eehwau eiwq poq yui udru udhdsds diashd sygd ays dasg yds djsh sd yagy ee hwau eiwyui udru udhii dsds diashd sygd ays damm dsdzz jsh sd yagy eehwau eiwyui udru udhdsds diashd sygd ays dasgyd</p>
+            <button class="btn btn-primary">Join Us</button>
+        </div>
+        <div class="m2">
+            <div>
+
+                {{!-- <img src="../../public/img/trainer.png" alt="Trainer"> --}}
+
+            </div>
+        </div>
+
+
+    </div>
+    {{!-- /////////////////// --}}
+        <h1>Our Packages</h1>
+
+    <div class="g">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cardio Section</h5>
+            <p class="card-text">Loreum mple text to build on tld on tgfkj example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Get It</a>
+          </div>
+        </div>
+       <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Without Cardio</h5>
+            <p class="card-text">Loreum mple text to build on tld on tgfkj example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Get It</a>
+          </div>
+        </div>
+       <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Diet Plan</h5>
+            <p class="card-text">Loreum mple text to build on tld on tgfkj example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Get It</a>
+          </div>
+        </div>
+       <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Expensive Trainer</h5>
+            <p class="card-text">Loreum mple text to build on tld on tgfkj example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Get It</a>
+          </div>
+        </div>
+       <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Budget Trainer</h5>
+            <p class="card-text">Loreum mple text to build on tld on tgfkj example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Get It</a>
+          </div>
+        </div>
+       <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Customized Plan</h5>
+            <p class="card-text">Loreum mple text to build on tld on tgfkj example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Get It</a>
+          </div>
+        </div>
+       <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Other</h5>
+            <p class="card-text">Loreum mple text to build on tld on tgfkj example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Get It</a>
+          </div>
+        </div>
+       
+
+    </div>
+
+    <h2 class="hstack_h2">Get alerts on Email</h2>
+    <div class="hstack gap-3">
+        <input class="form-control me-auto" type="text" placeholder="Add your item here...">
+        <button type="button" class="btn btn-secondary">Submit</button>
+        <div class="vr"></div>
+        <button type="button" class="btn btn-outline-danger">Reset</button>
+    </div>
+
+<br><br><br>
+    <h2 class="hstack_h2">Our Gym Competition</h2>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#Positions</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Weight Cat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>28</td>
+      <td>80kg</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>22</td>
+      <td>60kg</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>33</td>
+      <td>94kg</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br><br>
+
+    <h2 class="hstack_h2">Our moto</h2>
+
+    <div class="panels">
+        <div class="panel panel1">
+            <p>hey</p>
+            <p>lets</p>
+            <p>Gym</p>
+        </div>
+        <div class="panel panel2">
+            <p>we will</p>
+            <p>take</p>
+            <p>Diet</p>
+        </div>
+        <div class="panel panel3">
+            <p>experience</p>
+            <p>it</p>
+            <p>today</p>
+        </div>
+        <div class="panel panel4">
+            <p>give</p>
+            <p>all</p>
+            <p>you can</p>
+        </div>
+        <div class="panel panel5">
+            <p>life</p>
+            <p>in</p>
+            <p>Health</p>
+        </div>
+    </div>
+
+
+
+
+
+    {{> footer}}
+</body>
+<script>
+    
+ const panels=document.querySelectorAll('.panel');
+ panels.forEach(panel1=> panel1.addEventListener('click',toggleOpen));
+ panels.forEach(panel=>panel.addEventListener('transitionend',toggleActive))
+ 
+ function toggleOpen()
+ {
+     console.log('hello')
+    this.classList.toggle('open');
+     
+ }
+
+ function toggleActive(e)
+ {
+    console.log(e.propertyName);
+    if(e.propertyName.includes('flex'))
+    {
+        this.classList.toggle('open-active');
+    }
+     
+ }
+
+
+</script>
+</html>
